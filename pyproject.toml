@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aicrew"
+version = "0.1.0"
+description = "aicrew using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.30.11"}
+qdrant-client = "^1.9.1"
+
+[tool.poetry.scripts]
+aicrew = "aicrew.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
